@@ -1,7 +1,7 @@
-<?php require('actions/signupAction.php') ?>
+<?php require('actions/loginAction.php') ?>
 <!DOCTYPE html>
 <html lang="fr">
-<?php include './includes/head.php' ?>
+<?php include 'includes/head.php' ?>
 
 <body>
     <br><br>
@@ -17,26 +17,18 @@
             <input type="text" class="form-control" name="pseudo" id="exampleInputEmail1" aria-describedby="emailHelp">
 
         </div>
-        <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Nom</label>
-            <input type="text" class="form-control" name="lastname" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Prénom</label>
-            <input type="text" class="form-control" name="firstname" id="exampleInputPassword1">
-        </div>
+
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Password</label>
             <input type="password" class="form-control" name="password" id="exampleInputPassword1">
         </div>
 
-        <button type="submit" class="btn btn-primary" name="validate">S'inscrire</button>
+        <button type="submit" class="btn btn-primary" name="validate">Se connecter</button>
         <br><br>
-        <a href="login.php">
-            <p>J'ai déjà un compte, je me connecte</p>
+        <a href="signup.php">
+            <p>Je n'ai pas de compte, je m'inscris</p>
         </a>
     </form>
-
 
 </body>
 
