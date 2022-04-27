@@ -1,5 +1,8 @@
-<?php require('actions/users/securityAction.php');
-require('actions/questions/publishQuestionAction.php') ?>
+<?php
+
+require('actions/questions/publishQuestionAction.php');
+require('actions/users/securityAction.php');
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <?php include 'includes/head.php' ?>
@@ -12,6 +15,8 @@ require('actions/questions/publishQuestionAction.php') ?>
         if (isset($errorMsg)) {
             # code...
             echo '<p>' . $errorMsg . '</p>';
+        } elseif (isset($successMsg)) {
+            echo '<p>' . $successMsg . '</p>';
         }
         ?>
         <div class="mb-3">

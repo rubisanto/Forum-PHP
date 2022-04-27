@@ -13,6 +13,12 @@ if (isset($_POST['validate'])) {
         // Récupérer identifiant auteur
         $questionIdAuthor = $_SESSION['id'];
         $questionPseudoAuthor = $_SESSION['pseudo'];
+        // Insérer les post dans la BDD
+        $insertQuestionsOnWebsite = $bdd->prepare('INSERT INTO questions(title, description, content, id_author, pseudo_author, date_publication) VALUES (?,?,?,?,?,?)');
+        $insertQuestionsOnWebsite->execute(array($questionTitle, $questionDescription, $questionContent, $questionIdAuthor, $questionPseudoAuthor, $questionDate));
+
+        //Variable de succès du post dans la BDD
+        $successMsg = "Votre question a bien été publiée sur le site";
     } else {
         $errorMsg = 'Veuillez compléter tous les champs';
     }
