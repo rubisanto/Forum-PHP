@@ -12,6 +12,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="publishQuestion.php">Publier une question</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="myQuestions.php">Mes questions</a>
+                </li>
 
 
             </ul>
