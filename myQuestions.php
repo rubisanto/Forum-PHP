@@ -1,5 +1,7 @@
-<?php require('actions/questions/myQuestionsAction.php');
+<?php
 require('actions/users/securityAction.php');
+require('actions/questions/myQuestionsAction.php');
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -27,8 +29,8 @@ require('actions/users/securityAction.php');
                         <?= $question['description'] ?>
 
                     </p>
-                    <a href="#" class="btn btn-primary">Accéder à l'article</a>
-                    <a href="#" class="btn btn-warning">Modifier l'article</a>
+                    <a href="#" class="btn btn-primary">Accéder à la question</a>
+                    <a href="editQuestion.php?id=<?= $question['id'] ?>" class="btn btn-warning">Modifier la question</a>
                 </div>
             </div>
             <br>

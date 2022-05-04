@@ -1,6 +1,6 @@
 <?php
 require('actions/database.php');
-// Quand le vouton valider 
+// Quand le bouton valider est appuyé
 if (isset($_POST['validate'])) {
     // Vérifier que tous les champs sont remplis 
     if (!empty($_POST['title']) and !empty($_POST['description']) and !empty($_POST['content'])) {
