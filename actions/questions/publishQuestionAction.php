@@ -1,5 +1,7 @@
 <?php
+require('actions/users/securityAction.php');
 require('actions/database.php');
+
 // Quand le bouton valider est appuyé
 if (isset($_POST['validate'])) {
     // Vérifier que tous les champs sont remplis 
